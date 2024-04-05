@@ -1,6 +1,6 @@
 .vscode
-# high_res/
-# low_res/
+high_res/
+low_res/
 *.old
 *.blend1
 *.blend

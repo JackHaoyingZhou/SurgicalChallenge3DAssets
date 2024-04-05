@@ -7,3 +7,6 @@ low_res/
 blender_dev/
 blender-dev/
 build/
+__pycache__
+.idea/
+.vscode/

@@ -4,3 +4,4 @@
 * V1.1 --> Collision with convex hulls. Good performance.
 * V1.2 --> Scale assets to actual dimensions.
 * V1.3 --> Simple assets with new PSM model
+* V1.4 --> Scaled assets with full new PSM models.

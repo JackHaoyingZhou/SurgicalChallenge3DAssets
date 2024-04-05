@@ -25,7 +25,7 @@ gravity:
 namespace: /ambf/env/new_psm1/
 BODY gripper_left:
   name: gripper_left
-  mesh: gripper_left.OBJ
+  mesh: gripper_left_001.OBJ
   mass: 1.0
   collision margin: 0.001
   scale: 1.0
@@ -107,7 +107,7 @@ BODY gripper_left:
     transparency: 1.0
 BODY gripper_right:
   name: gripper_right
-  mesh: gripper_right.OBJ
+  mesh: gripper_right_001.OBJ
   mass: 1.0
   collision margin: 0.001
   scale: 1.0
@@ -258,7 +258,7 @@ BODY tool_main_insert:
     transparency: 1.0
 BODY tool_pitch_link:
   name: tool_pitch_link
-  mesh: tool_pitch_link.OBJ
+  mesh: tool_pitch_link_001.OBJ
   mesh remove duplicates: False
   mass: 1.0
   collision margin: 0.001
@@ -322,6 +322,7 @@ BODY tool_pitch_link:
       g: 0.4588235021
       r: 0.4490194917
     transparency: 1.0
+    shininess: 128
 BODY tool_roll_link:
   name: tool_roll_link
   mesh: tool_roll_link.OBJ

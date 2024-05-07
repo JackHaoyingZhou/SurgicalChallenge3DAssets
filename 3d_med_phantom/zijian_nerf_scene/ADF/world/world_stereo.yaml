@@ -1,5 +1,5 @@
 enclosure size: { length: 10.0, width: 10.0, height: 3.0 }
-lights: [light2]
+lights: [light1, light2]
 cameras: [cameraL, cameraR, cameraL2]
 environment: "./checkered_floor.yaml"
 namespace: /ambf/env/
@@ -13,22 +13,24 @@ shaders:
 light1:
   namespace: lights/
   name: light1
-  location: { x: 0.0, y: 0.5, z: 2.5 }
-  direction: { x: 0, y: 0, z: -1.0 }
-  spot exponent: 0.3
+  location: { x: 0.0, y: 0.0, z: 0.0 }
+  direction: { x: 0, y: -1.0, z: 0.0 }
+  attenuation: {constant: 0.6, linear: 0.8, quadratic: 0.0}
+  spot exponent: 0.9 #Not used in the SRC
   shadow quality: 0
-  cutoff angle: 0.7
+  cutoff angle: 1.6
+  parent: BODY LightFrame
 
 light2:
   namespace: lights/
   name: light2
   location: { x: 0.0, y: 0.0, z: 0.0 }
   direction: { x: 0, y: 0.0, z: -1.0 }
-  attenuation: {constant: 0.8, linear: 0.8, quadratic: 0.0}
+  attenuation: {constant: 0.6, linear: 0.8, quadratic: 0.0}
   spot exponent: 0.9 #Not used in the SRC
   shadow quality: 0
   cutoff angle: 1.6
-  parent: BODY CameraFrame
+  parent: BODY CameraFrame 
 
 light3:
   namespace: lights/
